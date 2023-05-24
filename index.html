@@ -153,20 +153,21 @@
 
   .final-text {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 50%;
     left: 50%;
-    z-index: 10;
+    height: 100%;
+    width: 100%;
     transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    z-index: 3;
   }
 
   .text-item {
+    position: absolute;
     opacity: 0;
     font-size: 30px;
     font-family: "Bungee Shade";
@@ -174,16 +175,8 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
       0 0 0 #8a2be2, 0 0 2px black;
     animation: text-animation 5s linear forwards;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 40%;
-    left: 20%;
-    text-align: left;
-    z-index: 3;
-  }
-  
-  .text-item.stacked {
-    margin-top: 125px;
+    text-align: center;
+    z-index: 10;
   }
 
   .text-item:nth-child(1) {
@@ -203,7 +196,7 @@
   }
 
   .text-item:nth-child(5) {
-    animation-delay: 16s;
+    animation-delay: 20s;
   }
   
   .text-item:nth-child(6) {
@@ -227,67 +220,63 @@
   }
   
   .text-item:nth-child(11) {
-    animation-delay: 46s;
-  }
-  
-  .text-item:nth-child(12) {
     animation-delay: 50s;
   }
   
-  .text-item:nth-child(13) {
-    animation-delay: 51s;
-  }
-  
-  .text-item:nth-child(14) {
+  .text-item:nth-child(12) {
     animation-delay: 55s;
   }
   
-  .text-item:nth-child(15) {
-    animation-delay: 56s;
-  }
-  
-  .text-item:nth-child(16) {
+  .text-item:nth-child(13) {
     animation-delay: 60s;
   }
   
-  .text-item:nth-child(17) {
+  .text-item:nth-child(14) {
     animation-delay: 65s;
   }
   
-  .text-item:nth-child(18) {
+  .text-item:nth-child(15) {
     animation-delay: 70s;
   }
   
-  .text-item:nth-child(19) {
+  .text-item:nth-child(16) {
     animation-delay: 75s;
   }
   
-  .text-item:nth-child(20) {
+  .text-item:nth-child(17) {
     animation-delay: 80s;
   }
   
-  .text-item:nth-child(21) {
-    animation-delay: 81s;
-  }
-  
-  .text-item:nth-child(22) {
+  .text-item:nth-child(18) {
     animation-delay: 85s;
   }
   
-  .text-item:nth-child(23) {
+  .text-item:nth-child(19) {
     animation-delay: 90s;
   }
   
-  .text-item:nth-child(24) {
+  .text-item:nth-child(20) {
     animation-delay: 95s;
   }
   
-  .text-item:nth-child(25) {
+  .text-item:nth-child(21) {
     animation-delay: 100s;
   }
   
-  .text-item:nth-child(26) {
+  .text-item:nth-child(22) {
     animation-delay: 105s;
+  }
+  
+  .text-item:nth-child(23) {
+    animation-delay: 110s;
+  }
+  
+  .text-item:nth-child(24) {
+    animation-delay: 115s;
+  }
+  
+  .text-item:nth-child(25) {
+    animation-delay: 120s;
   }
   
 </style>
@@ -295,68 +284,126 @@
 <div class="final-bg"></div>
 <div class="final-text">
   <span class="text-item">
-    you made it!</span>
-  <span class="text-item">
-    what did you think?</span>
-  <span class="text-item">
-    i hope you liked my visuals</span>
+    you made it!
+  </span>
   
   <span class="text-item">
-    like i hinted at earler, though...</span>
-  <span class="text-item stacked">
-    this project is about the music.</span>
+    what did you think?
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    i hope you liked<br>
+    my visuals
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    like i hinted at earlier, though...<br>
+    this project is about the music.
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    what did you make of the<br>
+    "background" tracks?
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    were you trying to match <br> 
+    visual to genre?
+  </span>
   
   <span class="text-item">
-    what did you make of the "background" tracks?</span>
-  <span class="text-item">
-    were you trying to match visual to genre?</span>
-  <span class="text-item">
-    ...</span>
-  <span class="text-item">
-    do you think you did well?</span>
+    ...
+  </span>
   
   <span class="text-item">
-    would you be surprised to learn that</span>
-  <span class="text-item stacked">
-    each track was given to us by ai?</span>
+    do you think you did well?
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    would you be surprised to learn that<br>
+    each track was given to us by ai?
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    that's right,<br>
+    you could say today's music selection<br>
+    was sponsored by INSERT
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    beyond the been-there-heard-that<br>
+    ai commentary,
+  </span>
   
   <span class="text-item">
-    that's right,</span>
-  <span class="text-item stacked">
-    you could say today's music was sponsored by INSERT</span>
+    i'm curious:
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    what do you think this says<br>
+    about genre?
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    ai platforms source their information<br>
+    from what you, me,<br>
+    and everyone else says online
+  </span>
   
   <span class="text-item">
-    beyond the been-there-heard-that ai commentary,</span>
-  <span class="text-item stacked">
-    i'm curious:</span>
+    makes you wonder
+  </span>
   
-  <span class="text-item">
-    what do you think this says about genre?</span>
-  <span class="text-item">
-    ai platforms source their information from what you, me, and everyone else says online</span>
-  <span class="text-item">
-    makes you wonder how big a role discourse could have in cementing genric normativity...</span>
+  <span class="text-item" style="white-space: pre-line;">
+    how big a role<br>
+    discourse could have in cementing<br>
+    genre normativity
+  </span>
   
-  <span class="text-item">
-    more and more artists are outright rejecting being categorized by genre</span>
-  <span class="text-item">
-    this could call us to reconsider</span>
-  <span class="text-item stacked">
-    whether genre can ever accurately encompass the vast infitity that is creativity</span>
+  <span class="text-item" style="white-space: pre-line;">
+    more and more artists<br>
+    are outright rejecting being<br>
+    categorized by genre
+  </span>
   
-  <span class="text-item">
-    by buying into genre, 
-    are we contributing to boxing artists in unfairly?</span>
-  <span class="text-item">
-    that's for each of us to decide, i guess</span>
-	<span class="text-item">
-    anyway, thanks so much for participating xoxo</span>
-  <span class="text-item">
-    special thanks to:
-    Jon Satrom
-    Nick Briz
+  <span class="text-item" style="white-space: pre-line;">
+    this could call us to reconsider<br>
+    whether genre can ever accurately encompass
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    the vast infitity that is<br>
+    creativity
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    by buying into genre,<br>
+    are we guilty of boxing-in artists unfairly?
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    that's for each of us to decide,<br>
+    i guess
+  </span>
+  
+	<span class="text-item" style="white-space: pre-line;">
+    anyway,<br>
+    thanks so much for participating<br>
+    xoxo
+  </span>
+  
+  <span class="text-item" style="white-space: pre-line;">
+    special thanks to:<br>
+    Jon Satrom<br>
+    Nick Briz<br>
     &
   </span>
-  <span class="text-item" style="top: 0;">
-    chatgpt!!</span>
+  
+  <span class="text-item">
+    of course
+  </span>
+  
+  <span class="text-item">
+    chatgpt!!
+  </span>
 </div>
